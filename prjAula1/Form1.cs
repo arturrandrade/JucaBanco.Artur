@@ -1,13 +1,15 @@
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Numerics;
+using System.Xml.Linq;
 
 namespace prjAula1
 {
     public partial class Form1 : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -103,6 +105,25 @@ namespace prjAula1
 
                     lblMensagem.Text = "Usuário inválido";
 
+                }
+
+                {
+                    //Criando uma conexão
+                    SqlConnection conexao =
+                    new SqlConnection(ConfigurationManager.ConnectionStrings["UI.Properties.Settings.strConexao"].ToString());
+                    SqlDataReader leitor; //declarando uma variável do tipo leitor de dados
+
+                    //Criando um comando
+                    SqlCommand cmd = new SqlCommand();
+
+                    //criando texto do comando, tipo e conexão que será usada
+                    cmd.CommandText = "psvalidaLogin";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Connection = conexao;
+                    //passando os parâmetros necessários
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("cpf", txtLogin.Text);
+                    cmd.Parameters.AddWithValue("senha", txtSenha.Text);
                 }
             }
         }

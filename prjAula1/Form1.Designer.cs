@@ -32,7 +32,7 @@
             txtSenha = new TextBox();
             txtcpf = new TextBox();
             aqui = new Label();
-            lblLogin = new Label();
+            txtLogin = new Label();
             btnEsqueceuSenha = new Button();
             btnCadastrar = new Button();
             lblMensagem = new Label();
@@ -72,18 +72,18 @@
             aqui.Size = new Size(0, 15);
             aqui.TabIndex = 3;
             // 
-            // lblLogin
+            // txtLogin
             // 
-            lblLogin.AutoSize = true;
-            lblLogin.BackColor = Color.Transparent;
-            lblLogin.Font = new Font("Agency FB", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblLogin.ForeColor = Color.HotPink;
-            lblLogin.Location = new Point(317, 128);
-            lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(76, 42);
-            lblLogin.TabIndex = 4;
-            lblLogin.Text = "LOGIN";
-            lblLogin.Click += label1_Click;
+            txtLogin.AutoSize = true;
+            txtLogin.BackColor = Color.Transparent;
+            txtLogin.Font = new Font("Agency FB", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtLogin.ForeColor = Color.HotPink;
+            txtLogin.Location = new Point(317, 128);
+            txtLogin.Name = "txtLogin";
+            txtLogin.Size = new Size(76, 42);
+            txtLogin.TabIndex = 4;
+            txtLogin.Text = "LOGIN";
+            txtLogin.Click += label1_Click;
             // 
             // btnEsqueceuSenha
             // 
@@ -177,7 +177,7 @@
             Controls.Add(lblMensagem);
             Controls.Add(btnCadastrar);
             Controls.Add(btnEsqueceuSenha);
-            Controls.Add(lblLogin);
+            Controls.Add(txtLogin);
             Controls.Add(aqui);
             Controls.Add(txtcpf);
             Controls.Add(txtSenha);
@@ -195,7 +195,7 @@
         private TextBox txtSenha;
         private TextBox txtcpf;
         private Label aqui;
-        private Label lblLogin;
+        private Label txtLogin;
         private Button btnEsqueceuSenha;
         private Button btnCadastrar;
         private Label lblMensagem;
