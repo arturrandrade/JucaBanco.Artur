@@ -13,7 +13,15 @@ namespace prjAula1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -108,22 +116,49 @@ namespace prjAula1
                 }
 
                 {
-                    //Criando uma conexão
-                    SqlConnection conexao =
-                    new SqlConnection(ConfigurationManager.ConnectionStrings["UI.Properties.Settings.strConexao"].ToString());
-                    SqlDataReader leitor; //declarando uma variável do tipo leitor de dados
+                    try
+                    {
+                        //Criando uma conexão
+                        SqlConnection conexao =
+                        new SqlConnection(ConfigurationManager.ConnectionStrings["UI.Properties.Settings.strConexao"].ToString());
+                        SqlDataReader leitor; //declarando uma variável do tipo leitor de dados
 
-                    //Criando um comando
-                    SqlCommand cmd = new SqlCommand();
+                        //Criando um comando
+                        SqlCommand cmd = new SqlCommand();
 
-                    //criando texto do comando, tipo e conexão que será usada
-                    cmd.CommandText = "psvalidaLogin";
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Connection = conexao;
-                    //passando os parâmetros necessários
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("cpf", txtLogin.Text);
-                    cmd.Parameters.AddWithValue("senha", txtSenha.Text);
+                        //criando texto do comando, tipo e conexão que será usada
+                        cmd.CommandText = "psvalidaLogin";
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Connection = conexao;
+                        //passando os parâmetros necessários
+                        cmd.Parameters.Clear();
+                        cmd.Parameters.AddWithValue("cpf", txtLogin.Text);
+                        cmd.Parameters.AddWithValue("senha", txtSenha.Text);
+
+                        conexao.Open(); //abrindo a conexão
+
+                        leitor = cmd.ExecuteReader();
+                        //igualando o leitor ao resultado trazido do BD
+
+                        if (leitor.HasRows) //se o leitor encontrar linhas de dados
+                        {
+                            leitor.Read();
+
+                            MessageBox.Show("Bem Vindo!");
+
+                            leitor.GetInt32(1);
+
+                            //UtilUI.LimpaForm(this);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        
+                        
+                        
+                        throw;
+                    }
                 }
             }
         }
