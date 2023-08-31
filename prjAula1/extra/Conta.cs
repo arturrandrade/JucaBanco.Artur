@@ -2,6 +2,7 @@
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,10 @@ namespace prjAula1.classes
         public DateTime DiadeAbertura { get; set; }
         public DateTime DiadeFechamento { get; set; }
         public static double SaldoTotal { get; set; }
+        public int Id { get; internal set; }
+        public int IdCliente { get; internal set; }
+        public string StatusConta { get; internal set; }
+        public string Senha { get; internal set; }
 
         public Conta()
         {
@@ -73,9 +78,8 @@ namespace prjAula1.classes
                 this.Saldo = this.Saldo - valorSaque;
             }
             return this.Saldo;
-
-
         }
+
 
     }
 }

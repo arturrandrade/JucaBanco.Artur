@@ -34,9 +34,14 @@ namespace prjAula1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var telamenu = new Form2();
+            var telamenu = new mensagem();
             this.Hide();
             telamenu.Show();
+        }
+
+        public static implicit operator Form5(SizeF v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

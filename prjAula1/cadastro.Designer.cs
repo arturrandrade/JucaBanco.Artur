@@ -1,6 +1,6 @@
 ﻿namespace prjAula1
 {
-    partial class Form3
+    partial class cadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(cadastro));
             pictureBox1 = new PictureBox();
             lblLogin = new Label();
             txtNome = new TextBox();

@@ -5,13 +5,13 @@
     <Compile Update="prjAula1\extraForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="prjAula1\Form1.cs">
+    <Compile Update="prjAula1\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="prjAula1\Form2.cs">
+    <Compile Update="prjAula1\mensagem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="prjAula1\Form3.cs">
+    <Compile Update="prjAula1\cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="prjAula1\Form4.cs">

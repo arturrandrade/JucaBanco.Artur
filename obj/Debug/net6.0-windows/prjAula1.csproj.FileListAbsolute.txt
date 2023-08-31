@@ -14,3 +14,6 @@ C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\obj\Debug\net6.0-windows\prj
 C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\obj\Debug\net6.0-windows\prjAula1.AssemblyInfoInputs.cache
 C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\obj\Debug\net6.0-windows\prjAula1.AssemblyInfo.cs
 C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\obj\Debug\net6.0-windows\prjAula1.csproj.CoreCompileInputs.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\obj\Debug\net6.0-windows\prjAula1.cadastro.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\obj\Debug\net6.0-windows\prjAula1.Login.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\obj\Debug\net6.0-windows\prjAula1.mensagem.resources
