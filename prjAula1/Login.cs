@@ -92,7 +92,7 @@ namespace prjAula1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+             
             if (txtcpf.TextLength < 11 || txtSenha.TextLength < 6)
 
             {
