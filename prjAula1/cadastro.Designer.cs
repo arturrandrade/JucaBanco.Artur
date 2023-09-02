@@ -33,7 +33,7 @@
             lblLogin = new Label();
             txtNome = new TextBox();
             txtSenhaCadastro = new TextBox();
-            txtCpfCadastro = new TextBox();
+            txtCpf = new TextBox();
             txtDataNascimento = new TextBox();
             txtEmail = new TextBox();
             rbOutro = new RadioButton();
@@ -42,12 +42,13 @@
             button2 = new Button();
             pictureBox2 = new PictureBox();
             textBox1 = new TextBox();
-            textBox3 = new TextBox();
+            cmbEstados = new TextBox();
             textBox4 = new TextBox();
             textBox6 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox11 = new TextBox();
+            txtCidade = new TextBox();
+            txtSenhaConta = new TextBox();
+            txtRepetirSenhaConta = new TextBox();
+            txtNumero = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -58,9 +59,10 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.Location = new Point(184, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(352, 467);
+            pictureBox1.Size = new Size(352, 512);
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // lblLogin
             // 
@@ -97,15 +99,15 @@
             txtSenhaCadastro.TabIndex = 19;
             txtSenhaCadastro.TextChanged += txtSenhaCadastro_TextChanged;
             // 
-            // txtCpfCadastro
+            // txtCpf
             // 
-            txtCpfCadastro.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCpfCadastro.ForeColor = SystemColors.ScrollBar;
-            txtCpfCadastro.Location = new Point(197, 434);
-            txtCpfCadastro.Name = "txtCpfCadastro";
-            txtCpfCadastro.PlaceholderText = "CPF";
-            txtCpfCadastro.Size = new Size(217, 33);
-            txtCpfCadastro.TabIndex = 22;
+            txtCpf.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCpf.ForeColor = SystemColors.ScrollBar;
+            txtCpf.Location = new Point(197, 434);
+            txtCpf.Name = "txtCpf";
+            txtCpf.PlaceholderText = "CPF";
+            txtCpf.Size = new Size(217, 33);
+            txtCpf.TabIndex = 22;
             // 
             // txtDataNascimento
             // 
@@ -133,7 +135,7 @@
             rbOutro.BackColor = Color.Transparent;
             rbOutro.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             rbOutro.ForeColor = Color.DeepPink;
-            rbOutro.Location = new Point(447, 475);
+            rbOutro.Location = new Point(22, 435);
             rbOutro.Name = "rbOutro";
             rbOutro.Size = new Size(76, 29);
             rbOutro.TabIndex = 27;
@@ -147,7 +149,7 @@
             rbFeminino.BackColor = Color.Transparent;
             rbFeminino.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             rbFeminino.ForeColor = Color.DeepPink;
-            rbFeminino.Location = new Point(184, 475);
+            rbFeminino.Location = new Point(22, 357);
             rbFeminino.Name = "rbFeminino";
             rbFeminino.Size = new Size(105, 29);
             rbFeminino.TabIndex = 28;
@@ -161,7 +163,7 @@
             rbMasculino.BackColor = Color.Transparent;
             rbMasculino.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             rbMasculino.ForeColor = Color.DeepPink;
-            rbMasculino.Location = new Point(309, 475);
+            rbMasculino.Location = new Point(22, 399);
             rbMasculino.Name = "rbMasculino";
             rbMasculino.Size = new Size(116, 29);
             rbMasculino.TabIndex = 29;
@@ -181,7 +183,6 @@
             button2.TabIndex = 30;
             button2.Text = "Criar Conta";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // pictureBox2
             // 
@@ -204,15 +205,15 @@
             textBox1.Size = new Size(217, 33);
             textBox1.TabIndex = 39;
             // 
-            // textBox3
+            // cmbEstados
             // 
-            textBox3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.ForeColor = SystemColors.ScrollBar;
-            textBox3.Location = new Point(197, 200);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Estado";
-            textBox3.Size = new Size(217, 33);
-            textBox3.TabIndex = 41;
+            cmbEstados.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbEstados.ForeColor = SystemColors.ScrollBar;
+            cmbEstados.Location = new Point(197, 200);
+            cmbEstados.Name = "cmbEstados";
+            cmbEstados.PlaceholderText = "Estado";
+            cmbEstados.Size = new Size(217, 33);
+            cmbEstados.TabIndex = 41;
             // 
             // textBox4
             // 
@@ -235,35 +236,45 @@
             textBox6.Size = new Size(217, 33);
             textBox6.TabIndex = 44;
             // 
-            // textBox9
+            // txtCidade
             // 
-            textBox9.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox9.ForeColor = SystemColors.ScrollBar;
-            textBox9.Location = new Point(197, 317);
-            textBox9.Name = "textBox9";
-            textBox9.PlaceholderText = "Cidade";
-            textBox9.Size = new Size(217, 33);
-            textBox9.TabIndex = 47;
+            txtCidade.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCidade.ForeColor = SystemColors.ScrollBar;
+            txtCidade.Location = new Point(197, 317);
+            txtCidade.Name = "txtCidade";
+            txtCidade.PlaceholderText = "Cidade";
+            txtCidade.Size = new Size(217, 33);
+            txtCidade.TabIndex = 47;
             // 
-            // textBox10
+            // txtSenhaConta
             // 
-            textBox10.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox10.ForeColor = SystemColors.ScrollBar;
-            textBox10.Location = new Point(197, 356);
-            textBox10.Name = "textBox10";
-            textBox10.PlaceholderText = "Senha";
-            textBox10.Size = new Size(217, 33);
-            textBox10.TabIndex = 48;
+            txtSenhaConta.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSenhaConta.ForeColor = SystemColors.ScrollBar;
+            txtSenhaConta.Location = new Point(197, 356);
+            txtSenhaConta.Name = "txtSenhaConta";
+            txtSenhaConta.PlaceholderText = "Senha";
+            txtSenhaConta.Size = new Size(217, 33);
+            txtSenhaConta.TabIndex = 48;
             // 
-            // textBox11
+            // txtRepetirSenhaConta
             // 
-            textBox11.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox11.ForeColor = SystemColors.ScrollBar;
-            textBox11.Location = new Point(197, 395);
-            textBox11.Name = "textBox11";
-            textBox11.PlaceholderText = "Repetir Senha";
-            textBox11.Size = new Size(217, 33);
-            textBox11.TabIndex = 49;
+            txtRepetirSenhaConta.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtRepetirSenhaConta.ForeColor = SystemColors.ScrollBar;
+            txtRepetirSenhaConta.Location = new Point(197, 395);
+            txtRepetirSenhaConta.Name = "txtRepetirSenhaConta";
+            txtRepetirSenhaConta.PlaceholderText = "Repetir Senha";
+            txtRepetirSenhaConta.Size = new Size(217, 33);
+            txtRepetirSenhaConta.TabIndex = 49;
+            // 
+            // txtNumero
+            // 
+            txtNumero.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNumero.ForeColor = SystemColors.ScrollBar;
+            txtNumero.Location = new Point(197, 473);
+            txtNumero.Name = "txtNumero";
+            txtNumero.PlaceholderText = "Número";
+            txtNumero.Size = new Size(217, 33);
+            txtNumero.TabIndex = 50;
             // 
             // cadastro
             // 
@@ -271,12 +282,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(725, 516);
-            Controls.Add(textBox11);
-            Controls.Add(textBox10);
-            Controls.Add(textBox9);
+            Controls.Add(txtNumero);
+            Controls.Add(txtRepetirSenhaConta);
+            Controls.Add(txtSenhaConta);
+            Controls.Add(txtCidade);
             Controls.Add(textBox6);
             Controls.Add(textBox4);
-            Controls.Add(textBox3);
+            Controls.Add(cmbEstados);
             Controls.Add(textBox1);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
@@ -285,7 +297,7 @@
             Controls.Add(rbOutro);
             Controls.Add(txtEmail);
             Controls.Add(txtDataNascimento);
-            Controls.Add(txtCpfCadastro);
+            Controls.Add(txtCpf);
             Controls.Add(txtSenhaCadastro);
             Controls.Add(txtNome);
             Controls.Add(lblLogin);
@@ -305,7 +317,7 @@
         private Label lblLogin;
         private TextBox txtNome;
         private TextBox txtSenhaCadastro;
-        private TextBox txtCpfCadastro;
+        private TextBox txtCpf;
         private TextBox txtDataNascimento;
         private TextBox txtEmail;
         private RadioButton rbOutro;
@@ -314,11 +326,12 @@
         private Button button2;
         internal protected PictureBox pictureBox2;
         private TextBox textBox1;
-        private TextBox textBox3;
+        private TextBox cmbEstados;
         private TextBox textBox4;
         private TextBox textBox6;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox11;
+        private TextBox txtCidade;
+        private TextBox txtSenhaConta;
+        private TextBox txtRepetirSenhaConta;
+        private TextBox txtNumero;
     }
 }

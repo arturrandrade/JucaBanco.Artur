@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            txtSaldo = new Label();
             button1 = new Button();
-            lblMensagem = new TextBox();
+            txtValorDeposito = new TextBox();
             button2 = new Button();
             button3 = new Button();
             SuspendLayout();
             // 
-            // label1
+            // txtSaldo
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(284, 310);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 0;
-            label1.Text = "saldo:";
+            txtSaldo.AutoSize = true;
+            txtSaldo.Location = new Point(284, 310);
+            txtSaldo.Name = "txtSaldo";
+            txtSaldo.Size = new Size(38, 15);
+            txtSaldo.TabIndex = 0;
+            txtSaldo.Text = "saldo:";
             // 
             // button1
             // 
@@ -54,13 +54,13 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // lblMensagem
+            // txtValorDeposito
             // 
-            lblMensagem.Location = new Point(284, 122);
-            lblMensagem.Name = "lblMensagem";
-            lblMensagem.Size = new Size(165, 23);
-            lblMensagem.TabIndex = 2;
-            lblMensagem.TextChanged += textBox1_TextChanged;
+            txtValorDeposito.Location = new Point(284, 122);
+            txtValorDeposito.Name = "txtValorDeposito";
+            txtValorDeposito.Size = new Size(165, 23);
+            txtValorDeposito.TabIndex = 2;
+            txtValorDeposito.TextChanged += textBox1_TextChanged;
             // 
             // button2
             // 
@@ -87,9 +87,9 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(lblMensagem);
+            Controls.Add(txtValorDeposito);
             Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(txtSaldo);
             Name = "extraForm";
             Text = "extraForm";
             ResumeLayout(false);
@@ -98,9 +98,9 @@
 
         #endregion
 
-        private Label label1;
+        private Label txtSaldo;
         private Button button1;
-        private TextBox lblMensagem;
+        private TextBox txtValorDeposito;
         private Button button2;
         private Button button3;
     }

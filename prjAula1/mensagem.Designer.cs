@@ -157,6 +157,7 @@
             button1.TabIndex = 18;
             button1.Text = "Configurações";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button4
             // 
@@ -256,7 +257,7 @@
             pictureBox3.TabIndex = 38;
             pictureBox3.TabStop = false;
             // 
-            // Form2
+            // mensagem
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -280,7 +281,7 @@
             Controls.Add(label1);
             Controls.Add(lblLogin);
             Controls.Add(pictureBox1);
-            Name = "Form2";
+            Name = "mensagem";
             Text = "Form2";
             Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

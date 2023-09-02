@@ -1,0 +1,17 @@
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\bin\Debug\net6.0-windows\update.exe
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\bin\Debug\net6.0-windows\update.deps.json
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\bin\Debug\net6.0-windows\update.runtimeconfig.json
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\bin\Debug\net6.0-windows\update.dll
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\bin\Debug\net6.0-windows\update.pdb
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.csproj.AssemblyReference.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.Form1.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.csproj.GenerateResource.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.AssemblyInfoInputs.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.AssemblyInfo.cs
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.csproj.CoreCompileInputs.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.dll
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\refint\update.dll
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.pdb
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\update.genruntimeconfig.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\update\obj\Debug\net6.0-windows\ref\update.dll

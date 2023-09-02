@@ -40,5 +40,10 @@ namespace prjAula1
         {
             return saldo;
         }
+
+        internal static string RetornarSaldoTodasContas()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

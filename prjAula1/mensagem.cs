@@ -56,7 +56,7 @@ namespace prjAula1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var tranferencia = new Form5();
+            var tranferencia = new Form();
             this.Hide();
             tranferencia.Show();
         }
@@ -68,7 +68,10 @@ namespace prjAula1
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 
 }

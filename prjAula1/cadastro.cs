@@ -13,13 +13,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace prjAula1
 {
     public partial class cadastro : Form
     {
         public string Nome { get; set; }
-
-
+        public object SenhaConta { get; private set; }
+        public object RepetirSenhaConta { get; private set; }
+        public object UtilUI { get; private set; }
+        public object LimparForm { get; private set; }
 
         public cadastro()
         {
@@ -33,14 +36,14 @@ namespace prjAula1
 
         public void button2_Click(object sender, EventArgs e)
         {
-            if (txtCpfCadastro.Text == string.Empty || txtDataNascimento.Text == string.Empty || txtEmail.Text == string.Empty || txtNome.Text == string.Empty || txtSenhaCadastro.Text == string.Empty)
+            if (txtCpf.Text == string.Empty || txtDataNascimento.Text == string.Empty || txtEmail.Text == string.Empty || txtNome.Text == string.Empty || txtSenhaCadastro.Text == string.Empty)
             {
                 MessageBox.Show("Alguma caixa esta vazia!");
             }
             else
             {
 
-                if (double.TryParse(txtCpfCadastro.Text, out double res) == false || txtCpfCadastro.TextLength < 11)
+                if (double.TryParse(txtCpf.Text, out double res) == false || txtCpf.TextLength < 11)
                 {
                     MessageBox.Show("Cpf errado!");
 
@@ -111,7 +114,7 @@ namespace prjAula1
         {
             try
             {
-                if (SenhaConta.Text == RepetirSenhaConta.Text)
+                if (txtSenhaConta.Text == txtRepetirSenhaConta.Text)
                 {
                     //Criando uma conexão
                     SqlConnection conexao =
@@ -135,14 +138,11 @@ namespace prjAula1
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("nomecliente", txtNome.Text);
                     cmd.Parameters.AddWithValue("dataNascimento", Convert.ToDateTime(txtDataNascimento.Text));
-                    cmd.Parameters.AddWithValue("logradouro", txtLogradouro.Text);
                     cmd.Parameters.AddWithValue("numero", txtNumero.Text);
-                    cmd.Parameters.AddWithValue("complemento", txtComplemento.Text);
                     cmd.Parameters.AddWithValue("cidade", txtCidade.Text);
                     cmd.Parameters.AddWithValue("estado", cmbEstados.Text);
                     cmd.Parameters.AddWithValue("cpf", txtCpf.Text);
-                    cmd.Parameters.AddWithValue("senha", txtSenha.Text);
-                    cmd.Parameters.AddWithValue("celular", txtCelular.Text);
+                    cmd.Parameters.AddWithValue("senha", txtSenhaConta.Text);
 
 
 
@@ -169,7 +169,13 @@ namespace prjAula1
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+}
+
 
 
 

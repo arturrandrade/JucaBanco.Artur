@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            FazerDeposito = new TextBox();
-            DepositoInicial = new Label();
+            txtSaldoInicial = new TextBox();
+            txtDepositoInicial = new Label();
             CriarConta = new Button();
-            SenhaConta = new Label();
-            RepetirSenhaConta = new Label();
+            txtSenhaConta = new Label();
+            txtRepeteSenhaConta = new Label();
             SenhaDaConta = new TextBox();
             RepetirSenhaDaConta = new TextBox();
             SuspendLayout();
             // 
-            // FazerDeposito
+            // txtSaldoInicial
             // 
-            FazerDeposito.Location = new Point(278, 85);
-            FazerDeposito.Name = "FazerDeposito";
-            FazerDeposito.Size = new Size(165, 23);
-            FazerDeposito.TabIndex = 3;
+            txtSaldoInicial.Location = new Point(278, 85);
+            txtSaldoInicial.Name = "txtSaldoInicial";
+            txtSaldoInicial.Size = new Size(165, 23);
+            txtSaldoInicial.TabIndex = 3;
             // 
-            // DepositoInicial
+            // txtDepositoInicial
             // 
-            DepositoInicial.AutoSize = true;
-            DepositoInicial.Location = new Point(315, 58);
-            DepositoInicial.Name = "DepositoInicial";
-            DepositoInicial.Size = new Size(88, 15);
-            DepositoInicial.TabIndex = 4;
-            DepositoInicial.Text = "Depósito Inicial";
-            DepositoInicial.Click += label1_Click;
+            txtDepositoInicial.AutoSize = true;
+            txtDepositoInicial.Location = new Point(315, 58);
+            txtDepositoInicial.Name = "txtDepositoInicial";
+            txtDepositoInicial.Size = new Size(88, 15);
+            txtDepositoInicial.TabIndex = 4;
+            txtDepositoInicial.Text = "Depósito Inicial";
+            txtDepositoInicial.Click += label1_Click;
             // 
             // CriarConta
             // 
@@ -64,24 +64,24 @@
             CriarConta.UseVisualStyleBackColor = true;
             CriarConta.Click += button3_Click;
             // 
-            // SenhaConta
+            // txtSenhaConta
             // 
-            SenhaConta.AutoSize = true;
-            SenhaConta.Location = new Point(313, 142);
-            SenhaConta.Name = "SenhaConta";
-            SenhaConta.Size = new Size(90, 15);
-            SenhaConta.TabIndex = 6;
-            SenhaConta.Text = "Senha da Conta";
+            txtSenhaConta.AutoSize = true;
+            txtSenhaConta.Location = new Point(313, 142);
+            txtSenhaConta.Name = "txtSenhaConta";
+            txtSenhaConta.Size = new Size(90, 15);
+            txtSenhaConta.TabIndex = 6;
+            txtSenhaConta.Text = "Senha da Conta";
             // 
-            // RepetirSenhaConta
+            // txtRepeteSenhaConta
             // 
-            RepetirSenhaConta.AutoSize = true;
-            RepetirSenhaConta.Location = new Point(296, 229);
-            RepetirSenhaConta.Name = "RepetirSenhaConta";
-            RepetirSenhaConta.Size = new Size(132, 15);
-            RepetirSenhaConta.TabIndex = 7;
-            RepetirSenhaConta.Text = "Repita a senha da conta";
-            RepetirSenhaConta.Click += label3_Click;
+            txtRepeteSenhaConta.AutoSize = true;
+            txtRepeteSenhaConta.Location = new Point(296, 229);
+            txtRepeteSenhaConta.Name = "txtRepeteSenhaConta";
+            txtRepeteSenhaConta.Size = new Size(132, 15);
+            txtRepeteSenhaConta.TabIndex = 7;
+            txtRepeteSenhaConta.Text = "Repita a senha da conta";
+            txtRepeteSenhaConta.Click += label3_Click;
             // 
             // SenhaDaConta
             // 
@@ -105,11 +105,11 @@
             ClientSize = new Size(800, 450);
             Controls.Add(RepetirSenhaDaConta);
             Controls.Add(SenhaDaConta);
-            Controls.Add(RepetirSenhaConta);
-            Controls.Add(SenhaConta);
+            Controls.Add(txtRepeteSenhaConta);
+            Controls.Add(txtSenhaConta);
             Controls.Add(CriarConta);
-            Controls.Add(DepositoInicial);
-            Controls.Add(FazerDeposito);
+            Controls.Add(txtDepositoInicial);
+            Controls.Add(txtSaldoInicial);
             ForeColor = SystemColors.ControlText;
             Name = "Form4";
             Load += Form4_Load;
@@ -119,11 +119,11 @@
 
         #endregion
 
-        private TextBox FazerDeposito;
-        private Label DepositoInicial;
+        private TextBox txtSaldoInicial;
+        private Label txtDepositoInicial;
         private Button CriarConta;
-        private Label SenhaConta;
-        private Label RepetirSenhaConta;
+        private Label txtSenhaConta;
+        private Label txtRepeteSenhaConta;
         private TextBox SenhaDaConta;
         private TextBox RepetirSenhaDaConta;
     }

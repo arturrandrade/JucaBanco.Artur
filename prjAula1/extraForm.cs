@@ -31,7 +31,7 @@ namespace prjAula1
             //  Depositar(Convert.ToDouble(txtValorDeposito.Text)).ToString()
             //  , "Novo Saldo");
 
-            lblMensagem.Text = $"Saldo: R$ {minhaContinha.Depositar(Convert.ToDouble(txtValorDeposito.Text)).ToString("n2")}.";
+            txtValorDeposito.Text = $"Saldo: R$ {minhaContinha.Depositar(Convert.ToDouble(txtValorDeposito.Text)).ToString("n2")}.";
 
             Conta contaA = new Conta();
             contaA.Depositar(500);

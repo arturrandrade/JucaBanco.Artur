@@ -26,6 +26,7 @@ namespace prjAula1.classes
         public int IdCliente { get; internal set; }
         public string StatusConta { get; internal set; }
         public string Senha { get; internal set; }
+        public object IdCorrentista { get; internal set; }
 
         public Conta()
         {
