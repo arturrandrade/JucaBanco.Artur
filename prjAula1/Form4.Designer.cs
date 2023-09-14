@@ -85,7 +85,7 @@
             // 
             // SenhaDaConta
             // 
-            SenhaDaConta.Location = new Point(278, 170);
+            SenhaDaConta.Location = new Point(278, 172);
             SenhaDaConta.Name = "SenhaDaConta";
             SenhaDaConta.Size = new Size(165, 23);
             SenhaDaConta.TabIndex = 8;

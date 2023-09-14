@@ -26,5 +26,11 @@
     <Compile Update="T:\Publica\TURMA_TI48N\A.Graciolli\forms Jucas Bank\jucas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="updatee\update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="update\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
