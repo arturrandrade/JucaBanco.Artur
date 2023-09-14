@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\Form1.cs" Link="Form1.cs" />
+  </ItemGroup>
+
 </Project>

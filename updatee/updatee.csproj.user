@@ -4,5 +4,8 @@
     <Compile Update="C:\Users\artur.aamaral\update.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="update.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
