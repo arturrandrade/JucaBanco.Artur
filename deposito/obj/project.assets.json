@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\deposito\\deposito.csproj",
+      "projectUniqueName": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\deposito\\deposito.csproj",
       "projectName": "deposito",
-      "projectPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\deposito\\deposito.csproj",
+      "projectPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\deposito\\deposito.csproj",
       "packagesPath": "C:\\Users\\artur.aamaral\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\deposito\\obj\\",
+      "outputPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\deposito\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\artur.aamaral\\AppData\\Roaming\\NuGet\\NuGet.Config",

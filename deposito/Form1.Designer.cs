@@ -48,7 +48,7 @@
             Depositar.TabIndex = 43;
             Depositar.Text = "Depositar";
             Depositar.UseVisualStyleBackColor = true;
-            Depositar.Click += Depositar_Click;
+           
             // 
             // Titular
             // 
@@ -122,7 +122,7 @@
             Sacar.TabIndex = 52;
             Sacar.Text = "Sacar";
             Sacar.UseVisualStyleBackColor = true;
-            Sacar.Click += Sacar_Click;
+           
             // 
             // Form1
             // 
@@ -141,7 +141,7 @@
             Controls.Add(Depositar);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
+
             ResumeLayout(false);
             PerformLayout();
         }

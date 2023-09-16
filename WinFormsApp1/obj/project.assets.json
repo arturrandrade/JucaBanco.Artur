@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectUniqueName": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\WinFormsApp1\\WinFormsApp1.csproj",
       "projectName": "WinFormsApp1",
-      "projectPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\WinFormsApp1\\WinFormsApp1.csproj",
       "packagesPath": "C:\\Users\\artur.aamaral\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\WinFormsApp1\\obj\\",
+      "outputPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\WinFormsApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\artur.aamaral\\AppData\\Roaming\\NuGet\\NuGet.Config",

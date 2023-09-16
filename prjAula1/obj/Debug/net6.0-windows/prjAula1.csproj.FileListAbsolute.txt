@@ -83,3 +83,17 @@ C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-wi
 C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.AssemblyInfoInputs.cache
 C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.AssemblyInfo.cs
 C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.CoreCompileInputs.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.AssemblyReference.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.cadastro.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.ContaBancaria.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.extraForm.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.Form4.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.jucas.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.Login.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.mensagem.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.Properties.Resources.resources
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.GenerateResource.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.AssemblyInfoInputs.cache
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.AssemblyInfo.cs
+C:\Users\artur.aamaral\source\repos\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\JucaBanco.Artur\prjAula1\obj\Debug\net6.0-windows\prjAula1.csproj.CoreCompileInputs.cache

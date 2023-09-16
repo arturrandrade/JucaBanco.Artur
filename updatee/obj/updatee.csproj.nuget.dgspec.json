@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\updatee\\updatee.csproj": {}
+    "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\updatee\\updatee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\updatee\\updatee.csproj": {
+    "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\updatee\\updatee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\updatee\\updatee.csproj",
+        "projectUniqueName": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\updatee\\updatee.csproj",
         "projectName": "updatee",
-        "projectPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\updatee\\updatee.csproj",
+        "projectPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\updatee\\updatee.csproj",
         "packagesPath": "C:\\Users\\artur.aamaral\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\updatee\\obj\\",
+        "outputPath": "C:\\Users\\artur.aamaral\\source\\repos\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\JucaBanco.Artur\\updatee\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\artur.aamaral\\AppData\\Roaming\\NuGet\\NuGet.Config",
